@@ -75,8 +75,8 @@ export function Navigation() {
       
       // If we're on the home page, scroll directly
       if (pathname === "/") {
-        const element = document.getElementById(id)
-        if (element) {
+      const element = document.getElementById(id)
+      if (element) {
           setIsOpen(false)
           // Get the navigation height to offset the scroll
           const navHeight = 64 // Height of the fixed navigation
