@@ -1,4 +1,4 @@
-import { Home, Mail, Phone } from "lucide-react"
+import { Home, Mail, Phone, MessageCircle } from "lucide-react"
 
 export function Footer() {
   return (
@@ -33,14 +33,23 @@ export function Footer() {
           <div>
             <h4 className="font-medium text-lg mb-4">Get in Touch</h4>
             <div className="space-y-3">
-              <div className="flex items-center gap-2 opacity-90">
+              <a href="mailto:kkouchrad@gmail.com" className="flex items-center gap-2 opacity-90 hover:opacity-100 transition-opacity">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">contact@maisonelegante.com</span>
-              </div>
-              <div className="flex items-center gap-2 opacity-90">
+                <span className="text-sm">kkouchrad@gmail.com</span>
+              </a>
+              <a href="tel:+33754520244" className="flex items-center gap-2 opacity-90 hover:opacity-100 transition-opacity">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">+33 1 23 45 67 89</span>
-              </div>
+                <span className="text-sm">+33754520244</span>
+              </a>
+              <a 
+                href="https://wa.me/393516162970" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 opacity-90 hover:opacity-100 transition-opacity"
+              >
+                <MessageCircle className="h-4 w-4" />
+                <span className="text-sm">Chat with me on WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>

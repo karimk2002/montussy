@@ -8,8 +8,8 @@ export function LocationSection() {
         <h2 className="font-serif text-4xl font-medium text-foreground md:text-5xl lg:text-6xl text-center mb-12 text-balance">
           Discover the Neighborhood
         </h2>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-8 text-center">
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p className="text-pretty">
                 Located at 3 rue Mont Ussy in Fontainebleau. Walking distance to INSEAD campus and close to the town
@@ -21,19 +21,12 @@ export function LocationSection() {
             </div>
             <Link
               href="/location"
-              className="inline-flex items-center gap-2 text-accent hover:text-accent/90 transition-colors group"
+              className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 group"
             >
-              <span className="text-lg text-card-foreground underline">Explore the Neighborhood</span>
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 text-card-foreground" />
+              <span>Explore the Neighborhood</span>
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
-          <Link href="/location" className="relative aspect-[4/3] overflow-hidden rounded-lg block cursor-pointer group">
-            <img
-              src="/beautiful-urban-neighborhood-with-tree-lined-stree.jpg"
-              alt="Neighborhood location"
-              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-          </Link>
         </div>
       </div>
     </section>
