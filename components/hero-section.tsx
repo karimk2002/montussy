@@ -50,13 +50,12 @@ export function HeroSection() {
       </div>
 
       {/* Mobile: Video in the middle */}
-      <div className="md:hidden relative aspect-video">
+      <div className="md:hidden relative aspect-video overflow-hidden">
         <video
           autoPlay
           muted
           playsInline
           className="h-full w-full object-cover"
-          style={{ transform: "rotate(2deg) scale(1.1)" }}
         >
           <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/drone%20reversed-0Q3ohCUfBSSkoubt2YFWREMo4jHPTA.mov" type="video/mp4" />
         </video>

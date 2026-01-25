@@ -19,8 +19,12 @@ export async function RoomsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {roomsData.map((room) => (
-            <Link key={room.id} href={`/rooms/${room.id}`} className="block">
+          {roomsData.map((room, index) => (
+            <Link 
+              key={room.id} 
+              href={`/rooms/${room.id}`} 
+              className={`block ${index >= 3 ? 'hidden md:block' : ''}`}
+            >
               <Card className="group overflow-hidden border-border/50 bg-card hover:shadow-xl transition-all duration-500 h-full cursor-pointer">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img
@@ -45,7 +49,7 @@ export async function RoomsSection() {
 
         <div className="mt-12 text-center">
           <Button asChild size="lg" variant="outline">
-            <Link href="/rooms">View All Rooms with Filters</Link>
+            <Link href="/rooms">View All Available Rooms</Link>
           </Button>
         </div>
       </div>
