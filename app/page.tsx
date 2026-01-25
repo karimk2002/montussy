@@ -14,9 +14,9 @@ export default async function Home() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <AboutSection />
-      <RoomsSection />
       <SharedSpacesSection />
+      <RoomsSection />
+      <AboutSection />
       <AmenitiesSection />
       <AllInclusiveSection />
       <LocationSection />
