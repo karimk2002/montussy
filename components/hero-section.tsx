@@ -72,7 +72,7 @@ export function HeroSection() {
           className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-base font-medium transition-all duration-300"
           asChild
         >
-          <a href="#about">Discover the House</a>
+          <a href="#shared-spaces">Discover the House</a>
         </Button>
       </div>
     </section>

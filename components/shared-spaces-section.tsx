@@ -39,7 +39,7 @@ export function SharedSpacesSection() {
   const otherSpaces = spaces.filter((space) => space.title !== "Kitchen" && space.title !== "Living Room")
 
   return (
-    <section className="py-24 md:py-32 bg-background">
+    <section id="shared-spaces" className="py-24 md:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-4">
         <div className="text-center mb-20">
           <h2 className="font-serif text-4xl font-medium text-foreground md:text-5xl lg:text-6xl text-balance">
